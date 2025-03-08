@@ -46,11 +46,13 @@ Update osTicket in the web browser
 
 <h2>Installation Steps</h2>
 
+<h2>Install / Enable IIS in Windows WITH CGI</h2>
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/qN7NBiJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+When installing osTicket on Windows, you need a web server to handle requests. Windows comes with IIS (Internet Information Services), which is a built-in web server used for hosting websites and applications. However, since IIS does not natively support PHP, we need to enable CGI (Common Gateway Interface) to allow IIS to execute PHP scripts. Since osTicket is a PHP-based ticketing system, it cannot run directly on IIS without an interpreter. The CGI module (specifically FastCGI in modern versions of IIS) enables PHP scripts to execute efficiently. PHP in the other hand is a server-side scripting language used to create dynamic web applications. osTicket is built using PHP, meaning IIS needs a way to execute PHP scripts when users interact with the system.
 </p>
 <br />
 
