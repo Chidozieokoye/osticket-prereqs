@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+This setup involves downloading the osTicket installation files, configuring IIS with CGI, installing PHP and required modules, setting up MySQL, and registering PHP in IIS before installing osTicket v1.15.8. After installation, IIS is reloaded, necessary PHP extensions are enabled, and the osTicket configuration file is renamed and assigned proper permissions. Finally, HeidiSQL is used to create a new database for osTicket, and the installation is completed through the web browser..<br />
 
 
 <h2>Video Demonstration</h2>
@@ -22,27 +22,27 @@ https://youtu.be/DZESWgr-4NU
 
 <h2>List of Prerequisites</h2>
 
-Download the osTicket-Installation-Files
+1. Download the osTicket-Installation-Files
 
-Install / Enable IIS in Windows WITH CG
+2. Install / Enable IIS in Windows WITH CG
 
-Install PHP Manager for IIS and Rewrite Module
+3. Install PHP Manager for IIS and Rewrite Module
 
-Create the directory C:\PHP and unzip PHP 7.3.8 into it
+4. Create the directory C:\PHP and unzip PHP 7.3.8 into it
 
-Install VC_redist.x86.exe and MySQL 5.5.62
+5. Install VC_redist.x86.exe and MySQL 5.5.62
 
-Open IIS as an admin and register PHP
+6. Open IIS as an admin and register PHP
 
-Reload IIS and Install osTicket v1.15.8 
+7. Reload IIS and Install osTicket v1.15.8 
 
-Reload IIS, load osTicket, and enable disabled extensions
+8. Reload IIS, load osTicket, and enable disabled extensions
 
-Rename ost-sampleconfig.php file to ost-config.php and assign permission to it
+9. Rename ost-sampleconfig.php file to ost-config.php and assign permission to it
 
-Install HeidiSQL and create a new database called “osTicket
+10. Install HeidiSQL and create a new database called “osTicket
 
-Update osTicket in the web browser
+11. Update osTicket in the web browser
 
 <h2>Installation Steps</h2>
 
@@ -52,7 +52,7 @@ Update osTicket in the web browser
 <img src="https://i.imgur.com/qN7NBiJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-When installing osTicket on Windows, you need a web server to handle requests. Windows comes with IIS (Internet Information Services), which is a built-in web server used for hosting websites and applications. However, since IIS does not natively support PHP, we need to enable CGI (Common Gateway Interface) to allow IIS to execute PHP scripts. Since osTicket is a PHP-based ticketing system, it cannot run directly on IIS without an interpreter. The CGI module (specifically FastCGI in modern versions of IIS) enables PHP scripts to execute efficiently. PHP in the other hand is a server-side scripting language used to create dynamic web applications. osTicket is built using PHP, meaning IIS needs a way to execute PHP scripts when users interact with the system.
+In this step, IIS (Internet Information Services), which is Windows' built-in web server, is installed and configured with CGI (Common Gateway Interface) to enable support for executing PHP scripts. Since IIS does not natively process PHP, enabling CGI (specifically FastCGI) allows IIS to interpret and run PHP-based applications like osTicket, ensuring proper communication between the web server and the PHP interpreter.
 </p>
 <br />
 
@@ -66,7 +66,7 @@ When you open IIS as an administrator and register PHP, you’re configuring IIS
 </p>
 <br />
 
-<h2>Install HeidiSQL and create a new database called osTicket</h2>
+<h2>Install PHP Manager for IIS and Rewrite Module</h2>
 
 <p>
 <img src="https://i.imgur.com/Re8kBiY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
