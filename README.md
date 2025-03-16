@@ -46,7 +46,7 @@ https://youtu.be/DZESWgr-4NU
 
 <h2>Installation Steps</h2>
 
-1. <h2>Install / Enable IIS in Windows WITH CGI</h2>
+<h2>Install / Enable IIS in Windows WITH CGI</h2>
 
 <p>
 <img src="https://i.imgur.com/qN7NBiJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -56,7 +56,7 @@ In this step, IIS (Internet Information Services), which is Windows' built-in we
 </p>
 <br />
 
-2. <h2>Open IIS as an admin and register PHP</h2>
+<h2>Open IIS as an admin and register PHP</h2>
 
 <p>
 <img src="https://i.imgur.com/cVJmcVS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -66,7 +66,7 @@ When you open IIS as an administrator and register PHP, you’re configuring IIS
 </p>
 <br />
 
-3. <h2>Install HeidiSQL and create a new database called “osTicket</h2>
+<h2>Install HeidiSQL and create a new database called “osTicket</h2>
 
 <p>
 <img src="https://i.imgur.com/Re8kBiY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
