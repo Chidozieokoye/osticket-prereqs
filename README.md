@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-This setup involves downloading the osTicket installation files, configuring IIS with CGI, installing PHP and required modules, setting up MySQL, and registering PHP in IIS before installing osTicket v1.15.8. After installation, IIS is reloaded, necessary PHP extensions are enabled, and the osTicket configuration file is renamed and assigned proper permissions. Finally, HeidiSQL is used to create a new database for osTicket, and the installation is completed through the web browser. Please watch video demonstration below for more insight.<br />
+In this lab, I started by downloading the osTicket installation files and configuring IIS with CGI support. I then installed PHP along with the required modules, set up MySQL, and registered PHP in IIS before proceeding with the installation of osTicket v1.15.8. After the installation, I reloaded IIS, enabled the necessary PHP extensions, and renamed the osTicket configuration file, ensuring it had the correct permissions. Next, I used HeidiSQL to create a new database for osTicket, and I completed the installation through the web browser. For a more detailed walkthrough, please check out the video demonstration below.<br />
 
 
 <h2>Video Demonstration</h2>
